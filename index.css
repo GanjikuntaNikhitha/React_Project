@@ -1,0 +1,58 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+    padding: 20px 10px;
+    background-color: #20232a;
+}
+
+.search {
+    max-width: 400px;
+}
+
+img {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+}
+
+input{
+    height: 25px;
+    width: 300px;
+    appearance: none;
+    border: 0px inset rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+    outline: none;
+}
+
+.logo {
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-name {
+    font-size : 18px;
+    color: 	#61dafb;
+    letter-spacing: 1px;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+    .header {
+      flex-direction: column;
+      width : auto;
+      height : auto;
+    }
+}
