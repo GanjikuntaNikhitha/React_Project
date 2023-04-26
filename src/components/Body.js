@@ -23,14 +23,14 @@ const RestaurantList = () => {
     async function getRestaurants() {
         const response = await fetch(GET_RES_API_URL);
         const res_data = await response.json();
-        setRestaurants(res_data?.data?.cards[2]?.data?.data?.cards);
-        setFilteredRestaurants(res_data?.data?.cards[2]?.data?.data?.cards);
+        setRestaurants(res_data?.data?.cards[0]?.data?.data?.cards);
+        setFilteredRestaurants(res_data?.data?.cards[0]?.data?.data?.cards);
     };
+    
     // not render component (Early return)
     if (!restaurants) return null;
     
-    if (filteredRestaurants?.length === 0) return <h1>No Restraunt match your Filter!!</h1>;
-
+    // if (filteredRestaurants?.length === 0) return <h1>No Restraunt match your Filter!!</h1>;
     return (restaurants?.length === 0) ? (<Shimmer />) : (
         <>
             <div className='search-container'>

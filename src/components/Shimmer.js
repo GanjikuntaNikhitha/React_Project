@@ -1,18 +1,14 @@
 import React from "react";
-const Shimmer = ()=>{
+const Shimmer = () => {
     return (
-        <React.Fragment>
-            <div className="restaCard">
-            <div className="card-title"></div>
-            <div className="card-text"></div>
-            <div className="params">
-                <span className="card-rating">  
-                </span>
-                <span className="card-text"></span>
+            <div className="shimmerRestaCard">
+            {Array(30)
+            .fill("")
+            .map((e,index)=>(
+            <div key={index} className="shimmer-card"></div>
+            )
+            )}
             </div>
-
-        </div>
-        </React.Fragment>
     
     )
 }

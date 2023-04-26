@@ -124,6 +124,34 @@ img {
   .search-btn:hover {
     cursor: pointer;
   }
+
+  .shimmer-card{
+    width : 200px;
+    height: 200px;
+    background-color: lightgray;
+    margin: 20px;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+
+  .footer {
+    width: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    line-height: 50px;
+    background: #ffc300;
+    color: #001d3d;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif
+  }
+
+
+  .shimmerRestaCard{
+    display: flex;
+    flex-wrap: wrap;
+  }
   
 /* Responsive layout */
 @media (max-width: 800px) {
