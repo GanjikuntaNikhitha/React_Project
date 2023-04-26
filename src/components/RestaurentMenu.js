@@ -19,13 +19,13 @@ const RestaurntMent = () => {
     return (
         <div className="restaCard">
             <h1>Restaurant id : {params.id}</h1>
-            <h2>{restaurantMenuData.name}</h2>
-            <img src={IMG_CDN_URL + restaurantMenuData.cloudinaryImageId}></img>
-            <h3>{restaurantMenuData.areaName}</h3>
-            <h3>{restaurantMenuData.city}</h3>
-            <h3 className="card-rating">{restaurantMenuData.avgRating}</h3>
-            <h3>{restaurantMenuData.costForTwoMessage}</h3>
-            <h3>{restaurantMenuData.cuisines?.join(", ")}</h3>
+            <h2>{restaurantMenuData?.name}</h2>
+            <img src={IMG_CDN_URL + restaurantMenuData?.cloudinaryImageId}></img>
+            <h3>{restaurantMenuData?.areaName}</h3>
+            <h3>{restaurantMenuData?.city}</h3>
+            <h3 className="card-rating">{restaurantMenuData?.avgRating}</h3>
+            <h3>{restaurantMenuData?.costForTwoMessage}</h3>
+            <h3>{restaurantMenuData?.cuisines?.join(", ")}</h3>
         </div>
     )
 }
